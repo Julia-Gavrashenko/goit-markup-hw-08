@@ -1,0 +1,40 @@
+/* base styles */
+.page {
+    font-family: var(--main-font);
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+
+.logo {
+    display: block;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+
+.btn {
+    width: 200px;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--light-text-color);
+    background-color: var(--accent-background-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+}
+

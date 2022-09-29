@@ -1,0 +1,31 @@
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-fill-color);
+  border-radius: 50%;
+  transition: fill var(--anim-hover), background-color var(--anim-hover);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-background-color);
+  }
+}
+
+
+.socials__icon {
+  fill: var(--icon-light-color);
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--light-fill-color);
+  }
+}

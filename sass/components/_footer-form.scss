@@ -1,0 +1,41 @@
+.footer-mailing {
+    margin-left: 95px;
+    margin-right: auto;
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+}
+
+
+.footer-form__field {
+    width: 360px;
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--dark-fill-color);
+    padding-left: 16px;
+    color: var(--light-text-color);
+}
+
+.footer-form__field::placeholder {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer-form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-form__icon {
+    fill: var(--icon-white-color);
+    margin-left: 10px;
+}

@@ -1,0 +1,26 @@
+.addres {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.addres__text {
+    color: var(--light-text-color);
+    padding-bottom: 9px;
+}
+
+.addres__link {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--anim-hover);
+}
+
+.addres__contacts {
+    margin-bottom: 9px;
+}
+
+.addres__link:hover,
+.addres__link:focus {
+    color: var(--accent-text-color);
+}

@@ -1,0 +1,19 @@
+.header {
+    @extend %container;
+    background-color: var(--light-fill-color);
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 93px;
+    color: var(--black-text-color);
+}
+
+.header__web {
+    color: var(--accent-text-color);
+}
