@@ -49,16 +49,32 @@ img {
 }
 
 .portfolio, .clients, .team, .doings, .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio, .clients, .team, .doings, .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .footer__container, .portfolio-container, .clients, .team, .doings, .feature, .hero__container, .header {
-  width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container, .portfolio-container, .clients, .team, .doings, .feature, .hero__container, .header {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container, .portfolio-container, .clients, .team, .doings, .feature, .hero__container, .header {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
