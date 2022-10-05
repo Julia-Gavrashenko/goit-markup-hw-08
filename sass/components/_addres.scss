@@ -1,26 +1,38 @@
 .addres {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 .addres__text {
-    color: var(--light-text-color);
-    padding-bottom: 9px;
+  color: var(--light-text-color);
+  padding-bottom: 9px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .addres__link {
-    display: block;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color var(--anim-hover);
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--anim-hover);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .addres__contacts {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
+
+@media screen and (max-width: 1199px){
+    margin-bottom: 8px;
+}
 }
 
 .addres__link:hover,
 .addres__link:focus {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
