@@ -1,19 +1,32 @@
 .header {
-    @extend %container;
-    background-color: var(--light-fill-color);
-    border-bottom: 1px solid #ececec;
+  @extend %container;
+  background-color: var(--light-fill-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header__logo {
-    margin-right: 93px;
-    color: var(--black-text-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--black-text-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 92px;
+  }
 }
 
 .header__web {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }

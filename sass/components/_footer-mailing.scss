@@ -1,4 +1,9 @@
 .footer-mailing {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 95px;
     margin-right: auto;
