@@ -17,7 +17,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 20px;
-      line-height: calc(23 / 20);
+    line-height: calc(23 / 20);
   }
 }
 
@@ -43,7 +43,7 @@
     transition: border-color var(--anim-hover);
   }
 
-  @media screen  and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 450px;
   }
 }
@@ -116,7 +116,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-      line-height: calc(24 / 14);
+    line-height: calc(24 / 14);
   }
 }
 

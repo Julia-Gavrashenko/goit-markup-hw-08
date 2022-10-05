@@ -1332,7 +1332,7 @@ img {
   padding-left: 16px;
   color: var(--light-text-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-form__field {
     margin-bottom: 20px;
   }
