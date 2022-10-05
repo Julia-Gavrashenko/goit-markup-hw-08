@@ -1275,9 +1275,11 @@ img {
   fill: var(--light-fill-color);
 }
 
-.footer-mailing {
-  margin-left: 95px;
-  margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .footer-mailing {
+    margin-left: 95px;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1290,7 +1292,7 @@ img {
 }
 
 .footer-form__field {
-  width: 360px;
+  width: 450px;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1299,6 +1301,16 @@ img {
   background-color: var(--dark-fill-color);
   padding-left: 16px;
   color: var(--light-text-color);
+}
+@media screen and (max-width: 767px) {
+  .footer-form__field {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__field {
+    width: 360px;
+  }
 }
 
 .footer-form__field::-webkit-input-placeholder {
