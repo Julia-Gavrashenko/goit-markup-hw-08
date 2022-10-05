@@ -1,7 +1,5 @@
 .header-contacts {
   margin-left: auto;
-
-
 }
 
 .header-contacts__list {
@@ -58,8 +56,7 @@
   transition: fill var(--anim-hover);
 }
 
-.header-contacts__link:hover .header-contacts,
-.header-contacts__link:focus .header-contacts {
+.header-contacts__link:hover .header-contacts__icon,
+.header-contacts__link:focus .header-contacts__icon {
   fill: var(--accent-background-color);
 }
-
