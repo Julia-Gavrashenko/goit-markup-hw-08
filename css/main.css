@@ -211,22 +211,41 @@ img {
   margin-left: auto;
 }
 
-.header-contacts__list {
-  gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  }
 }
 
 .header-contacts__item {
@@ -248,12 +267,30 @@ img {
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-text-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 .header-contacts__icon {
   margin-right: 10px;
   fill: var(--icon-grey-color);
   -webkit-transition: fill var(--anim-hover);
   transition: fill var(--anim-hover);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__icon .header-contacts__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__icon .header-contacts__icon-phone {
+    width: 10px;
+    height: 14px;
+  }
 }
 .header-contacts__link:hover .header-contacts__icon, .header-contacts__link:focus .header-contacts__icon {
   fill: var(--accent-background-color);
