@@ -1,10 +1,7 @@
 .header-contacts {
   margin-left: auto;
 
-  @media screen and (max-width: 767px) {
-    dysplay: none;
 
-  }
 }
 
 .header-contacts__list {
@@ -61,8 +58,8 @@
   transition: fill var(--anim-hover);
 }
 
-.header-contacts__link:hover &,
-.header-contacts__link:focus & {
+.header-contacts__link:hover .header-contacts,
+.header-contacts__link:focus .header-contacts {
   fill: var(--accent-background-color);
 }
 
