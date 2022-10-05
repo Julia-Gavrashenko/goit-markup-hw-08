@@ -6,10 +6,7 @@
 .feature__list {
   display: flex;
   gap: 30px;
-
-  @media screen and (min-width: 480px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -22,8 +19,6 @@
     justify-content: center;
   }
 }
-
-
 
 .feature__item {
   @media screen and (min-width: 768px) and (max-width: 1199px) {

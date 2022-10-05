@@ -668,14 +668,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-}
-@media screen and (min-width: 480px) {
-  .feature__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .feature__list {
@@ -816,13 +812,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-@media screen and (min-width: 480px) {
-  .team__title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 33px;
-  }
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 33px;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -837,14 +829,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-}
-@media screen and (min-width: 480px) {
-  .team-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .team-card {
@@ -972,13 +960,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-@media screen and (min-width: 480px) {
-  .clients__title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 33px;
-  }
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 33px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
