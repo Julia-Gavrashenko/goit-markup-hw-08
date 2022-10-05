@@ -1,38 +1,43 @@
 .hero {
-    
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: var(--img-background-color);
-    background-image: url(../image/hero-bg-overlay-1.webp),
-        url(../image/hero-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--img-background-color);
+  background-image: url(../image/hero-bg-overlay-1.webp),
+    url(../image/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__container {
-    @extend %container;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  @extend %container;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero__title {
+  width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+
+  @media screen and (min-width: 1200px) {
     width: 696px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--light-text-color);
+  }
 }
 
 .hero__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

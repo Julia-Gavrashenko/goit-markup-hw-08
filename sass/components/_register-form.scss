@@ -1,6 +1,6 @@
 .register-form {
-  padding-left: 41px;
-  padding-right: 39px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -10,10 +10,15 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+      line-height: calc(23 / 20);
+  }
 }
 
 .register-form__field {
@@ -24,7 +29,7 @@
 }
 
 .register-form__input {
-  width: 450px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   background: var(--light-fill-color);
@@ -36,6 +41,10 @@
     border-color: var(--accent-background-color);
     outline: var(--accent-background-color);
     transition: border-color var(--anim-hover);
+  }
+
+  @media screen  and (min-width: 1200px) {
+    width: 450px;
   }
 }
 
@@ -98,12 +107,17 @@
   margin-bottom: 30px;
 }
 
-.register-form__agreement-label {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+.form-agreement__label {
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+      line-height: calc(24 / 14);
+  }
 }
 
 .form-agreement__link {

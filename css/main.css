@@ -276,17 +276,24 @@ img {
 }
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .hero__btn {
@@ -321,8 +328,8 @@ img {
 
 .modal {
   position: absolute;
-  min-width: 530px;
-  min-height: 580px;
+  min-width: 450px;
+  min-height: 610px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -332,6 +339,12 @@ img {
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 530px;
+    min-height: 580px;
+  }
 }
 
 .modal__btn {
@@ -360,8 +373,8 @@ img {
 }
 
 .register-form {
-  padding-left: 41px;
-  padding-right: 39px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -371,10 +384,16 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .register-form__name {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .register-form__field {
@@ -390,7 +409,7 @@ img {
 }
 
 .register-form__input {
-  width: 450px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   background: var(--light-fill-color);
@@ -404,6 +423,11 @@ img {
   outline: var(--accent-background-color);
   -webkit-transition: border-color var(--anim-hover);
   transition: border-color var(--anim-hover);
+}
+@media screen and (min-width: 1200px) {
+  .register-form__input {
+    width: 450px;
+  }
 }
 
 .register-form__label {
@@ -510,15 +534,21 @@ img {
   margin-bottom: 30px;
 }
 
-.register-form__agreement-label {
-  font-size: 14px;
-  line-height: 1.7142857143;
+.form-agreement__label {
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .form-agreement__label {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .form-agreement__link {
