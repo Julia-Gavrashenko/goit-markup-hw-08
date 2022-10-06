@@ -76,18 +76,23 @@
           </ul>
         </div>
 
+
+<button class="menu__btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+  <svg class="" width="40" height="40">
+    <use href="./image/icons.svg#menu-icon"></use>
+  </svg>
+</button>
+
         <!-- mobile-menu -->
         <div class="menu__container">
-        <button
-          class="menu__btn js-open-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="" width="40" height="40">
-            <use href="./image/icons.svg#menu-icon"></use>
-          </svg>
-        </button>
+        
+<button class=" menu__btn js-close-menu ">
+  <svg width="40" height="40">
+    <use href="./image/icons.svg#menu-close-icon"></use>
+  </svg>
+</button>
+
+
 
 <ul class="menu__list list">
   <li class="menu__item">
@@ -867,5 +872,6 @@
 
 
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
