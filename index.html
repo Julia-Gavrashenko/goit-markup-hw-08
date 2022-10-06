@@ -21,21 +21,21 @@
       referrerpolicy="no-referrer"
     />
     <!-- custom styles -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <!-- page -->
   <body class="page">
     <!-- header -->
-     <header class="header">
+    <header class="header">
       <div class="header__container">
         <a class="header__logo logo" href="" lang="en">
           <span class="header__web">Web</span>Studio
-        </a> 
+        </a>
 
         <!-- main-navigation -->
-         <nav class="nav">
+        <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link nav__link--current" href="./index.html"
@@ -75,22 +75,97 @@
             </li>
           </ul>
         </div>
+
+        <!-- mobile-menu -->
+        <div class="menu__container">
+        <button
+          class="menu__btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="" width="40" height="40">
+            <use href="./image/icons.svg#menu-icon"></use>
+          </svg>
+        </button>
+
+<ul class="menu__list list">
+  <li class="menu__item">
+    <a class="menu__link link menu__link--current" href="./index.html">Студія</a>
+  </li>
+  <li class="menu__item">
+    <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
+  </li>
+  <li class="menu__item">
+    <a class="menu__link link" href="">Контакти</a>
+  </li>
+</ul>
+
+<ul class="menu-contacts list">
+    <li class="menu-contacts__item">
+      <a class="menu-contacts__link menu-contacts__link--phone link" href="tel:+380961111111">
+        +38 096 111 11 11
+      </a>
+    </li>
+
+  <li class="menu-contacts__item">
+    <a class="menu-contacts__link menu-contacts__link--mail link" href="mailto:info@devstudio.com">
+      info@devstudio.com
+    </a>
+  </li>
+</ul>
+
+
+<ul class="menu-socials list">
+  <li class="menu-socials__item">
+    <a class="menu-socials__link link" href="https://instagram.com" aria-label="Instagram" target="_blank"
+      rel="noopener noreferrer">Instagram  
+    </a>
+  </li>
+
+  <li class="menu-socials__item">
+    <a class="menu-socials__link link" href="https://twitter.com" aria-label="Twitter" target="_blank"
+      rel="noopener noreferrer">Twitter   
+    </a>
+  </li>
+
+  <li class="menu-socials__item">
+    <a class="menu-socials__link link" href="https://facebook.com" aria-label="Facebook" target="_blank"
+      rel="noopener noreferrer">Facebook      
+    </a>
+  </li>
+
+  <li class="menu-socials__item">
+    <a class="menu-socials__link link" href="https://linkedin.com" aria-label="Linkedin" target="_blank"
+      rel="noopener noreferrer">LinkedIn     
+    </a>
+  </li>
+</ul>
+
+
+  
+
+
+</div>
+
+
+
       </div>
-    </header> 
+    </header>
 
     <!-- studio page sections-->
     <main>
       <!-- hero-section -->
-       <section class="hero">
+      <section class="hero">
         <div class="hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__btn btn " type="button" data-modal-open>
+          <button class="hero__btn btn" type="button" data-modal-open>
             Замовити послугу
           </button>
-        </div> 
+        </div>
 
         <!-- modal window -->
-         <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal__btn" type="button" data-modal-close>
               <svg width="18" height="18">
@@ -117,7 +192,9 @@
               </div>
 
               <div class="register-form__field">
-                <label class="register-form__label" for="user-phone">Телефон</label>
+                <label class="register-form__label" for="user-phone"
+                  >Телефон</label
+                >
                 <input
                   class="register-form__input"
                   type="tel"
@@ -130,7 +207,9 @@
               </div>
 
               <div class="register-form__field">
-                <label class="register-form__label" for="user-email">Пошта</label>
+                <label class="register-form__label" for="user-email"
+                  >Пошта</label
+                >
                 <input
                   class="register-form__input"
                   type="email"
@@ -143,7 +222,9 @@
               </div>
 
               <div class="register-form__message">
-                <label class="register-form__label" for="comment">Коментар</label>
+                <label class="register-form__label" for="comment"
+                  >Коментар</label
+                >
                 <textarea
                   class="register-form__input"
                   name="comment"
@@ -175,22 +256,23 @@
                 </label>
               </div>
 
-              <button class="register-form__btn btn" type="submit">Відправити</button>
+              <button class="register-form__btn btn" type="submit">
+                Відправити
+              </button>
             </form>
           </div>
         </div>
-      </section> 
+      </section>
 
       <!-- feature -->
       <section class="feature">
         <div class="feature__container">
           <h2 class="visually-hidden">Особливості</h2>
 
-          <ul class=" feature__list list">
-
+          <ul class="feature__list list">
             <li class="feature__item">
               <div class="feature__icon">
-                <svg  width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./image/icons.svg#antenna"></use>
                 </svg>
               </div>
@@ -203,7 +285,7 @@
 
             <li class="feature__item">
               <div class="feature__icon">
-                <svg  width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./image/icons.svg#clock"></use>
                 </svg>
               </div>
@@ -216,7 +298,7 @@
 
             <li class="feature__item">
               <div class="feature__icon">
-                <svg  width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./image/icons.svg#diagram"></use>
                 </svg>
               </div>
@@ -228,7 +310,7 @@
 
             <li class="feature__item">
               <div class="feature__icon">
-                <svg  width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./image/icons.svg#astronaut"></use>
                 </svg>
               </div>
@@ -243,7 +325,7 @@
       </section>
 
       <!-- doings -->
-       <section class="doings">
+      <section class="doings">
         <div class="doings__container">
           <h2 class="doings__title">Чим ми займаємося</h2>
           <ul class="doings__list list">
@@ -284,16 +366,17 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!-- team -->
-       <section class="team">
+      <section class="team">
         <h2 class="team__title">Наша команда</h2>
 
         <div class="team__container">
           <ul class="team-card list">
             <li class="team-card__item">
-              <img class="team-card__img"
+              <img
+                class="team-card__img"
                 src="image/img-1.jpg"
                 alt="фото дизайнера Ігора Дем'яненка"
                 width="270"
@@ -303,7 +386,7 @@
                 <h3 class="team-card__title">Ігор Дем'яненко</h3>
                 <p class="team-card__subtitle" lang="en">Product Designer</p>
 
-                 <!-- social-links  -->
+                <!-- social-links  -->
                 <ul class="socials list">
                   <li class="socials__item">
                     <a
@@ -363,7 +446,8 @@
             </li>
 
             <li class="team-card__item">
-              <img class="team-card__img"
+              <img
+                class="team-card__img"
                 src="image/img-2.jpg"
                 alt="фото дизайнера Ольги Репіної"
                 width="270"
@@ -432,7 +516,8 @@
             </li>
 
             <li class="team-card__item">
-              <img class="team-card__img"
+              <img
+                class="team-card__img"
                 src="image/img-3.jpg"
                 alt="фото дизайнера Миколи Тарасова"
                 width="270"
@@ -500,7 +585,8 @@
             </li>
 
             <li class="team-card__item">
-              <img class="team-card__img"
+              <img
+                class="team-card__img"
                 src="image/img-4.jpg"
                 alt="фото дизайнера Михайла Єрмакова"
                 width="270"
@@ -568,10 +654,10 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!-- clients section -->
-       <section class="clients section ">
+      <section class="clients section">
         <h2 class="clients__title">Постійні клієнти</h2>
         <div class="clients__container">
           <ul class="clients__list list">
@@ -661,13 +747,14 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
+    -->
 
     <!-- footer -->
-     <footer class="footer">
+    <footer class="footer">
       <div class="footer__container">
         <div class="footer__div">
-          <a class="footer__logo logo " href="" lang="en">
+          <a class="footer__logo logo" href="" lang="en">
             <span class="footer__web">Web</span>Studio
           </a>
           <address class="addres">
@@ -689,10 +776,10 @@
 
         <div class="footer-socials">
           <p class="footer__title">приєднуйтесь</p>
-          <ul class="footer-socials__list  list">
+          <ul class="footer-socials__list list">
             <li class="footer-socials__item">
               <a
-                class=" footer-socials__link link"
+                class="footer-socials__link link"
                 href="https://instagram.com"
                 aria-label="Instagram"
                 target="_blank"
@@ -760,7 +847,7 @@
                 id="footer-email"
                 placeholder="E-mail"
               />
-              <label  for="footer-email"></label>
+              <label for="footer-email"></label>
             </div>
 
             <button class="btn footer-form__btn" type="submit">
@@ -773,6 +860,12 @@
         </div>
       </div>
     </footer>
-    <script src="./modal.js"></script> 
+
+   
+
+
+
+
+    <script src="./modal.js"></script>
   </body>
 </html>
