@@ -17,7 +17,6 @@
 }
 
 .hero__title {
-  width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -28,6 +27,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-text-color);
+
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 696px;
