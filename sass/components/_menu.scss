@@ -97,9 +97,13 @@
 }
 
 .menu-contacts__link--phone {
-  font-size: 34px;
+  font-size: 27px;
   line-height: calc(40 / 34);
   color: var(--accent-text-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 
 .menu-contacts__link--mail {
@@ -108,16 +112,20 @@
 }
 
 .menu-socials {
-  display: flex;
-  gap: 10px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .menu-socials__item:not(:last-child)::after {
-  content: "";
-  width: 1px;
-  height: 22px;
-  margin-left: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  @media screen and (min-width: 480px) {
+    content: "";
+    width: 1px;
+    height: 22px;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .menu-socials__link {

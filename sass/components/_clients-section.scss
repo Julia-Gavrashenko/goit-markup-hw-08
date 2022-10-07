@@ -22,8 +22,14 @@
 .clients__list {
   display: flex;
   gap: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
