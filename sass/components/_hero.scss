@@ -20,27 +20,27 @@
 
   @media screen and (min-width: 481px) {
     background-image: url(../image/hero/hero-overlay_tab-@1x.png),
-        url(../image/hero/hero-img_tab-@1x.jpg);
-    
-      @media (min-device-pixel-ratio: 2),
+      url(../image/hero/hero-img_tab-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(../image/hero/hero-overlay_tab-@2x.png),
-          url(../image/hero/hero-img_tab-@2x.jpg);
-      }
+      background-image: url(../image/hero/hero-overlay_tab-@2x.png),
+        url(../image/hero/hero-img_tab-@2x.jpg);
+    }
   }
 
-    @media screen and (min-width: 769px) {
-      background-image: url(../image/hero/hero-overlay_desk-@1x.png),
-        url(../image/hero/hero-img_desk-@1x.jpg);
-  
-      @media (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 769px) {
+    background-image: url(../image/hero/hero-overlay_desk-@1x.png),
+      url(../image/hero/hero-img_desk-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(../image/hero/hero-overlay_desk-@2x.png),
-          url(../image/hero/hero-img_desk-@2x.jpg);
-      }
+      background-image: url(../image/hero/hero-overlay_desk-@2x.png),
+        url(../image/hero/hero-img_desk-@2x.jpg);
     }
+  }
 }
 
 .hero__container {
