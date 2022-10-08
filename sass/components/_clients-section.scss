@@ -34,7 +34,7 @@
 
 .clients__link {
   display: flex;
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -47,6 +47,13 @@
   &:focus {
     border-color: var(--accent-background-color);
   }
+
+
+ @media screen and (min-width: 480px) {
+   width: 210px;
+ }
+
+
 
   @media screen and (min-width: 768px) {
     width: 226px;
