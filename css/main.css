@@ -1208,7 +1208,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1224,6 +1224,11 @@ img {
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--accent-background-color);
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__link {
