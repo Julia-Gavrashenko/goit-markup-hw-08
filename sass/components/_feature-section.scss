@@ -1,6 +1,10 @@
 .feature {
-  @extend %container;
+  
   @extend %section;
+}
+
+.feature__container{
+@extend %container;
 }
 
 .feature__list {

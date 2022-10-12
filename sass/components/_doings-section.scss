@@ -1,12 +1,17 @@
 .doings {
     @extend %section;
-    @extend %container;
     padding-top: 0;
 
     @media screen and (max-width:1199px) {
         display: none;
     }
 }
+
+
+.doings__container{
+@extend %container;
+}
+
 
 .doings__title {
     margin-bottom: 50px;

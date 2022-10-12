@@ -59,7 +59,7 @@ img {
   }
 }
 
-.footer__container, .portfolio-container, .clients, .team, .doings, .feature, .hero__container, .header {
+.footer__container, .portfolio-container, .clients-container, .team__container, .doings__container, .feature__container, .hero__container, .header__container {
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -67,12 +67,12 @@ img {
   padding-left: 15px;
 }
 @media screen and (min-width: 768px) {
-  .footer__container, .portfolio-container, .clients, .team, .doings, .feature, .hero__container, .header {
+  .footer__container, .portfolio-container, .clients-container, .team__container, .doings__container, .feature__container, .hero__container, .header__container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__container, .portfolio-container, .clients, .team, .doings, .feature, .hero__container, .header {
+  .footer__container, .portfolio-container, .clients-container, .team__container, .doings__container, .feature__container, .hero__container, .header__container {
     max-width: 1200px;
   }
 }
@@ -501,6 +501,8 @@ img {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -532,13 +534,8 @@ img {
     background-image: url(../image/hero/hero-overlay_desk-@2x.png), url(../image/hero/hero-img_desk-@2x.jpg);
   }
 }
-
-.hero__container {
-  padding-top: 118px;
-  padding-bottom: 118px;
-}
 @media screen and (min-width: 1200px) {
-  .hero__container {
+  .hero {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -1045,6 +1042,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .team-card {

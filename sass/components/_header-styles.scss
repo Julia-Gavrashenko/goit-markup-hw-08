@@ -1,10 +1,10 @@
 .header {
-  @extend %container;
   background-color: var(--light-fill-color);
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
+  @extend %container;
   display: flex;
   align-items: center;
 }

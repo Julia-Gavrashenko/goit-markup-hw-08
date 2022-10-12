@@ -2,7 +2,8 @@
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,17 +42,15 @@
         url(../image/hero/hero-img_desk-@2x.jpg);
     }
   }
-}
-
-.hero__container {
-  @extend %container;
-  padding-top: 118px;
-  padding-bottom: 118px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
+}
+
+.hero__container {
+  @extend %container;
 }
 
 .hero__title {
