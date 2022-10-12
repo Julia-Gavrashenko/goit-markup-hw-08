@@ -1,6 +1,6 @@
 .team {
   @extend %section;
-  @extend %container;
+  @extend %container; 
   background-color: var(--secondary-background-color);
 }
 
